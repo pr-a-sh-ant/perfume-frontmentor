@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  color: hsl(212, 21%, 14%);
+}
+
+section {
+  padding: 20rem 48rem;
+}
+.card-perfume {
+  display: inline-block;
+  padding: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
+  border-radius: 11px;
+  overflow: hidden;
+}
+.perfume-description {
+  padding: 3rem 3rem;
+}
+.image-box {
+  background-image: url(images/image-product-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.primary-heading {
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-weight: 600;
+  color: hsl(228, 12%, 48%);
+  font-size: 1rem;
+}
+.secondary-heading {
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  line-height: 1;
+  padding-bottom: 2rem;
+}
+.perfume-description p {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6;
+  font-size: 1.3rem;
+  padding-bottom: 3rem;
+  letter-spacing: 1.5;
+  font-weight: 500;
+}
+.pricing {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.discount-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  font-size: 3rem;
+}
+
+.original-price {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: hsl(157, 38%, 21%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  display: none;
+}
+
+@media (max-width: 24em) {
+  html {
+    font-size: 50%;
+  }
+  section {
+    padding: 4rem 2rem;
+  }
+  .card-perfume {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
+  .perfume-description p {
+    font-size: 1.4rem;
+  }
+}
